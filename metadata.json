@@ -1,0 +1,6 @@
+{
+  "name": "Romer Tactical OS",
+  "description": "Instrument-grade technical command center and operations suite for Romer Data Systems labeling pipelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

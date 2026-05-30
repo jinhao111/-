@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --color-on-error-container: #ffdad6;
+  --color-on-secondary-container: #bab8b9;
+  --color-on-primary-container: #e7e4ff;
+  --color-outline-variant: #464554;
+  --color-tertiary-fixed-dim: #c8c6c8;
+  --color-tertiary-fixed: #e4e2e4;
+  --color-on-secondary-fixed-variant: #474647;
+  --color-primary-fixed: #e2dfff;
+  --color-surface: #121317;
+  --color-background: #070708;
+  --color-inverse-primary: #4f4ccd;
+  --color-on-surface-variant: #c7c4d6;
+  --color-on-secondary-fixed: #1c1b1c;
+  --color-error: #ffb4ab;
+  --color-on-background: #e3e2e7;
+  --color-on-tertiary-fixed-variant: #474649;
+  --color-on-tertiary: #303032;
+  --color-secondary-container: #4a494a;
+  --color-on-primary-fixed-variant: #3631b4;
+  --color-surface-container: #1e1f23;
+  --color-secondary-fixed: #e5e2e3;
+  --color-outline: #918f9f;
+  --color-on-tertiary-container: #e9e6e9;
+  --color-secondary: #c8c6c7;
+  --color-surface-container-low: #1a1b1f;
+  --color-primary-fixed-dim: #c2c1ff;
+  --color-on-surface: #e3e2e7;
+  --color-error-container: #93000a;
+  --color-on-tertiary-fixed: #1b1b1d;
+  --color-surface-tint: #c2c1ff;
+  --color-tertiary: #c8c6c7;
+  --color-surface-container-high: #292a2e;
+  --color-surface-container-highest: #343539;
+  --color-inverse-on-surface: #2f3034;
+  --color-on-secondary: #313031;
+  --color-primary: #c2c1ff;
+  --color-surface-dim: #121317;
+  --color-on-primary: #1c0b9f;
+  --color-surface-container-lowest: #0d0e12;
+  --color-surface-bright: #38393d;
+  --color-on-error: #690005;
+  --color-on-primary-fixed: #0c006a;
+  --color-surface-variant: #343539;
+  --color-primary-container: #5856d6;
+  --color-secondary-fixed-dim: #c8c6c7;
+  --color-inverse-surface: #e3e2e7;
+  --color-tertiary-container: #686769;
+
+  --font-sans: "Inter", "system-ui", "-apple-system", sans-serif;
+  --font-mono: "JetBrains Mono", "monospace";
+  --font-headline: "Inter", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  background-color: #070708;
+  background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.015) 1px, transparent 0);
+  background-size: 24px 24px;
+  color: #e3e2e7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.telemetry-grid {
+  background-image: radial-gradient(circle, rgba(194, 193, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glass-panel {
+  background: rgba(28, 28, 30, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(70, 69, 84, 0.5);
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card {
+  background: rgba(18, 19, 23, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(145, 143, 159, 0.15);
+}
+
+.status-glow-online { 
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.4); 
+}
+.status-glow-offline { 
+  box-shadow: 0 0 8px rgba(145, 143, 159, 0.4); 
+}
+.status-glow-error { 
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.4); 
+}
+
+/* Scrollbar behaviors */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #464554;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2c1ff;
+}
